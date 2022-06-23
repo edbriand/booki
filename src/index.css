@@ -17,6 +17,16 @@
   outline: none;
 }
 
+/* #region General */
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0 50px 35px;
+}
+
 .icon::before {
   display: inline-block;
   text-rendering: auto;
@@ -25,26 +35,70 @@
 
 h2 {
   font-weight: 700;
+  margin-block-start: 0.6em;
+  margin-block-end: 0.6em;
 }
+
+p {
+  font-weight: 500;
+}
+
+.close-top {
+  margin-top: 0;
+}
+
+.semi-close-bottom {
+  margin-bottom: 0.3em;
+}
+
+/* #endregion */
 
 /* #region Navbar */
 .navbar {
-  display: inline;
+  width: 100%;
+  margin: 0;
+}
+
+.nav-logo {
+  image-rendering: crisp-edges;
+  padding: 40px 0 20px 60px;
+}
+
+.navbar,
+.nav-logo {
+  height: 105px;
 }
 
 .navbar ul {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 50px 0 0;
 }
 
 .navbar li {
-  display: inline;
-  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 100%;
 }
 
-.navbar li a:hover {
-  border-top: 5px;
+.navbar li:hover {
+  border-top: 2px solid var(--color-main);
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navbar li:hover a {
+  color: var(--color-main);
 }
 
 /* #endregion */
@@ -58,6 +112,7 @@ h2 {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  margin: 20px 0;
 }
 
 .searchbar * {
