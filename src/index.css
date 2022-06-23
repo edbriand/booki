@@ -1,3 +1,9 @@
+:root {
+  --color-main: #0065fc;
+  --color-main-light: #deebff;
+  --color-background: #f2f2f2;
+}
+
 *,
 *::before,
 *::after {
@@ -7,4 +13,46 @@
 
 h2 {
   font-weight: 700;
+}
+
+.searchbar {
+  display: flex;
+  height: 50px;
+}
+
+.searchbar * {
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+}
+
+.searchbar input {
+  border-color: var(--color-background);
+  color: black;
+  font-weight: 700;
+  padding-left: 18px;
+  box-shadow: none;
+}
+
+.searchbar input::placeholder {
+  color: black;
+}
+
+.searchbar-icon {
+  width: 50px;
+  background-color: var(--color-background);
+  border: none;
+  border-radius: 16px 0 0 16px;
+}
+
+.searchbar-icon span {
+  width: fit-content;
+}
+
+.searchbar-button {
+  background-color: var(--color-main);
+  border: none;
+  border-radius: 0 16px 16px 0;
+  padding: 10px 18px;
+  color: white;
 }
