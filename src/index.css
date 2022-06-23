@@ -11,6 +11,12 @@
   font-family: Raleway, sans-serif;
 }
 
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
 .icon::before {
   display: inline-block;
   text-rendering: auto;
@@ -22,16 +28,23 @@ h2 {
 }
 
 /* #region Navbar */
+.navbar {
+  display: inline;
+}
 
-nav ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  display: inline-block;
-  width: 60px;
+.navbar li {
+  display: inline;
+  width: 200px;
+}
+
+.navbar li a:hover {
+  border-top: 5px;
 }
 
 /* #endregion */
@@ -39,22 +52,31 @@ nav li {
 /* #region Searchbar */
 
 .searchbar {
+  width: fit-content;
+  border: 2px solid var(--color-background);
+  border-radius: 16px;
   display: flex;
-  height: 50px;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .searchbar * {
   font-size: 18px;
   font-weight: 600;
+}
+
+.searchbar,
+.searchbar * {
   height: 50px;
 }
 
 .searchbar input {
-  border-color: var(--color-background);
+  border: none;
   color: black;
   font-weight: 700;
-  padding-left: 18px;
+  padding: 0 0 0 18px;
   box-shadow: none;
+  height: 46px;
 }
 
 .searchbar input::placeholder {
@@ -62,9 +84,11 @@ nav li {
 }
 
 .searchbar-icon {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  left: -2px;
   width: 50px;
   background-color: var(--color-background);
   border: none;
@@ -78,6 +102,8 @@ nav li {
 }
 
 .searchbar-button {
+  position: relative;
+  right: -2px;
   background-color: var(--color-main);
   border: none;
   border-radius: 0 16px 16px 0;
