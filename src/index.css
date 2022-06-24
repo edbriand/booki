@@ -43,12 +43,12 @@ p {
   font-weight: 500;
 }
 
-.close-top {
-  margin-top: 0;
+.title-duo:first-child {
+  margin-bottom: 0.3em;
 }
 
-.semi-close-bottom {
-  margin-bottom: 0.3em;
+.title-duo:last-child {
+  margin-top: 0;
 }
 
 /* #endregion */
@@ -87,7 +87,7 @@ p {
 }
 
 .navbar li:hover {
-  border-top: 2px solid var(--color-main);
+  border-top: 3px solid var(--color-main);
 }
 
 .navbar li a {
@@ -171,19 +171,3 @@ p {
 }
 
 /* #endregion */
-
-@media only screen and (max-width: 768px) {
-  .searchbar-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    border-radius: 16px;
-  }
-
-  .searchbar-button::before {
-    font: var(--fa-font-solid);
-    font-weight: 900;
-    content: '\f002';
-  }
-}
