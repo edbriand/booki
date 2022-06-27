@@ -171,3 +171,52 @@ p {
 }
 
 /* #endregion */
+
+/* #region Filter */
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-container button {
+  background-color: white;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding-right: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -10px;
+  width: 50px;
+  position: relative;
+  color: var(--color-main);
+  background-color: var(--color-main-light);
+  border: none;
+  border-radius: 25px;
+}
+
+.filter-container button,
+.filter-icon {
+  height: 50px;
+}
+
+.filter-icon::before {
+  font: var(--fa-font-solid);
+  font-weight: 900;
+  content: '';
+}
+
+.filter-icon.money-icon::before {
+  content: '\f53a';
+}
+
+/* #endregion */
