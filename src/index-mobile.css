@@ -39,6 +39,7 @@
 
   .navbar li {
     width: 50%;
+    border-bottom: 3px solid var(--color-background);
   }
 
   .navbar li:hover {

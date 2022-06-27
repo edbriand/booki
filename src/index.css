@@ -241,6 +241,8 @@ p {
 
 /* #endregion */
 
+/* #region Housing Info */
+
 .housing-info {
   display: flex;
   flex: wrap;
@@ -269,3 +271,5 @@ p {
   content: '\f129';
   color: var(--color-main);
 }
+
+/* #endregion */
