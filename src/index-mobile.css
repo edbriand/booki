@@ -48,6 +48,8 @@
 
   /* #endregion */
 
+  /* #region Searchbar */
+
   .searchbar {
     margin: 35px 0;
   }
@@ -65,4 +67,18 @@
     font-weight: 900;
     content: '\f002';
   }
+
+  /* #endregion */
+
+  /* #region Filters */
+
+  .filter-container button {
+    margin: 5px 10px 5px 0;
+  }
+
+  .filter-container h3 {
+    flex-basis: 100%;
+  }
+
+  /* #endregion */
 }

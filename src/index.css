@@ -112,7 +112,7 @@ p {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  margin: 20px 0;
+  margin: 20px 0 25px;
 }
 
 .searchbar * {
@@ -172,11 +172,18 @@ p {
 
 /* #endregion */
 
-/* #region Filter */
+/* #region Filters */
 
 .filter-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.filter-container h3 {
+  flex-basis: auto;
+  margin-right: 30px;
 }
 
 .filter-container button {
@@ -189,6 +196,7 @@ p {
   padding-right: 20px;
   font-size: 18px;
   font-weight: 700;
+  margin: 5px 25px 5px 0;
 }
 
 .filter-icon {
@@ -219,4 +227,45 @@ p {
   content: '\f53a';
 }
 
+.filter-icon.child-icon::before {
+  content: '\e59d';
+}
+
+.filter-icon.heart-icon::before {
+  content: '\f004';
+}
+
+.filter-icon.dog-icon::before {
+  content: '\f6d3';
+}
+
 /* #endregion */
+
+.housing-info {
+  display: flex;
+  flex: wrap;
+}
+
+.housing-info p {
+  margin: 0;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 2px solid var(--color-background);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info-icon::before {
+  font: var(--fa-font-solid);
+  font-weight: 900;
+  font-size: 12px;
+  content: '\f129';
+  color: var(--color-main);
+}
