@@ -34,9 +34,14 @@ main {
 }
 
 h2 {
+  font-size: 1.4em;
   font-weight: 700;
   margin-block-start: 0.6em;
   margin-block-end: 0.6em;
+}
+
+h3 {
+  font-size: 1.15em;
 }
 
 p {
@@ -245,7 +250,7 @@ p {
 
 .housing-info {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 .housing-info p {
@@ -269,6 +274,89 @@ p {
   font-weight: 900;
   font-size: 12px;
   content: '\f129';
+  color: var(--color-main);
+}
+
+/* #endregion */
+
+/* #region Host */
+
+.host-block {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+}
+
+.host-block > div {
+  border-radius: 16px;
+  background-color: var(--color-background);
+  padding: 40px;
+}
+
+.host-block div h2,
+.host-block div h3 {
+  margin: 0;
+}
+
+#pop {
+  width: 30%;
+}
+
+#host {
+  width: 70%;
+  margin-right: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  margin: 30px 0 40px;
+  padding: 0;
+}
+
+.card-container .card {
+  margin: 0;
+  padding: 5px;
+  height: 200px;
+  width: 246px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 114px;
+  object-fit: cover;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.card h4 {
+  margin: 8px 11px 4px;
+}
+
+.card p {
+  font-size: 0.9em;
+  margin: 0 0 0 11px;
+}
+
+.stars {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2px 0 0 11px;
+}
+
+.stars div::before {
+  font: var(--fa-font-solid);
+  font-weight: 900;
+  content: '\f005';
+  color: #d9d9d9;
+  font-size: 12px;
+}
+
+.stars div.star-on::before {
   color: var(--color-main);
 }
 
