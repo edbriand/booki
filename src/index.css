@@ -272,6 +272,7 @@ button:hover .filter-icon::before {
 .housing-info {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .housing-info p {
@@ -300,7 +301,7 @@ button:hover .filter-icon::before {
 
 /* #endregion */
 
-/* #region Host */
+/* #region Cards */
 
 .host-block {
   display: flex;

@@ -6,11 +6,23 @@
 
 @media only screen and (max-width: 768px) {
   main {
-    margin: 0 25px 35px;
+    margin: 0 0 35px;
+  }
+
+  .title-duo,
+  .filter-container,
+  .housing-info {
+    margin: 0 25px;
   }
 
   .title-duo:first-child {
     margin-top: 25px;
+  }
+
+  .housing-info {
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 
   /* #region Navbar */
@@ -52,7 +64,7 @@
   /* #region Searchbar */
 
   .searchbar {
-    margin: 35px 0;
+    margin: 35px 25px;
   }
 
   .searchbar-button {
@@ -79,6 +91,32 @@
 
   .filter-container h3 {
     flex-basis: 100%;
+    margin: 0 0 10px;
+  }
+
+  /* #endregion */
+
+  /* #region Cards */
+
+  .host-block {
+    flex-direction: column;
+  }
+
+  #host,
+  #pop {
+    width: auto;
+    border-radius: 0;
+    padding: 40px 20px;
+  }
+
+  #host {
+    margin-right: 0;
+    background-color: white;
+  }
+
+  .card,
+  #pop .card {
+    width: 100%;
   }
 
   /* #endregion */
