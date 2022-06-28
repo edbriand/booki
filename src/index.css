@@ -222,10 +222,21 @@ p {
   height: 50px;
 }
 
+.filter-container button:hover {
+  border: 2px solid var(--color-main-light);
+  position: relative;
+  top: +2px;
+  color: var(--color-main);
+}
+
 .filter-icon::before {
   font: var(--fa-font-solid);
   font-weight: 900;
   content: '';
+}
+
+button:hover .filter-icon::before {
+  font-size: 22px;
 }
 
 .filter-icon.money-icon::before {
