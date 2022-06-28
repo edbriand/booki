@@ -323,7 +323,7 @@ p {
   background-color: white;
   border: none;
   border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.25) 0 4px 25px 0;
+  box-shadow: 0 5px 15px 0 #dedfea;
 }
 
 .card img {
