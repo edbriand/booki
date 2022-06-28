@@ -331,6 +331,8 @@ button:hover .filter-icon::before {
   padding: 5px;
   height: 200px;
   width: 246px;
+  text-decoration: none;
+  color: black;
   background-color: white;
   border: none;
   border-radius: 20px;
