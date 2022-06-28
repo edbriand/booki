@@ -242,10 +242,11 @@ button {
   font: var(--fa-font-solid);
   font-weight: 900;
   content: '';
+  font-size: 20px;
 }
 
 button:hover .filter-icon::before {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .filter-icon.money-icon::before {
@@ -319,23 +320,42 @@ button:hover .filter-icon::before {
 }
 
 #pop {
+  position: relative;
   width: 30%;
+  min-width: 405px;
 }
 
 #host {
   width: 70%;
+  min-width: 326px;
   margin-right: 40px;
+}
+
+#pop > h2::after {
+  font: var(--fa-font-solid);
+  font-weight: 900;
+  content: '\f005';
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  right: 40px;
 }
 
 .card-container {
   display: flex;
   flex-flow: row wrap;
   gap: 30px;
-  margin: 30px 0 40px;
+  margin: 30px 0 0;
   padding: 0;
 }
 
+#host .card-container {
+  margin-bottom: 40px;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 5px;
   height: 200px;
@@ -346,6 +366,13 @@ button:hover .filter-icon::before {
   box-shadow: 0 5px 15px 0 #dedfea;
 }
 
+#pop .card {
+  display: flex;
+  flex-direction: row;
+  height: 144px;
+  width: 343px;
+}
+
 .card img {
   width: 100%;
   height: 114px;
@@ -354,19 +381,32 @@ button:hover .filter-icon::before {
   border-radius: 16px 16px 0 0;
 }
 
+#pop .card img {
+  width: 127px;
+  height: 100%;
+  border-radius: 16px 0 0 16px;
+}
+
 .card h4 {
-  margin: 6px 11px 4px;
+  margin: 6px 0 4px;
 }
 
 .card p {
   font-size: 0.9em;
-  margin: 0 0 0 11px;
+  margin: 0;
+}
+
+.card > div {
+  position: relative;
+  height: 100%;
+  margin-left: 11px;
 }
 
 .stars {
   display: flex;
   flex-flow: row nowrap;
-  margin: 2px 0 0 11px;
+  position: absolute;
+  bottom: 5px;
 }
 
 .stars div::before {
