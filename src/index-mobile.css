@@ -11,7 +11,8 @@
 
   .title-duo,
   .filter-container,
-  .housing-info {
+  .housing-info,
+  #activities {
     margin: 0 25px;
   }
 
@@ -87,6 +88,7 @@
 
   .filter-container button {
     margin: 5px 10px 5px 0;
+    font-size: 16px;
   }
 
   .filter-container h3 {
@@ -96,7 +98,7 @@
 
   /* #endregion */
 
-  /* #region Cards */
+  /* #region Hosts */
 
   .host-block {
     flex-direction: column;
@@ -117,6 +119,21 @@
   .card,
   #pop .card {
     width: 100%;
+  }
+
+  /* #endregion */
+
+  /* #region Activities */
+
+  #activities .card-container {
+    flex-flow: column nowrap;
+    height: auto;
+    gap: 25px;
+  }
+
+  #activities .card {
+    width: 100%;
+    height: 190px;
   }
 
   /* #endregion */

@@ -417,6 +417,11 @@ button:hover .filter-icon::before {
   border-radius: 16px 0 0 16px;
 }
 
+#pop .card > div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .stars {
   display: flex;
   flex-flow: row nowrap;
