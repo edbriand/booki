@@ -25,6 +25,16 @@
     margin: 0 0 35px;
   }
 
+  footer {
+    flex-direction: column;
+    padding: 50px 25px 0;
+  }
+
+  footer ul {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
   .title-duo,
   .filter-container,
   .housing-info,
