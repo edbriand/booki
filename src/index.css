@@ -310,7 +310,7 @@ button:hover .filter-icon::before {
 }
 
 .host-block > div {
-  border-radius: 16px;
+  border-radius: 20px;
   background-color: var(--color-background);
   padding: 40px;
 }
@@ -364,7 +364,12 @@ button:hover .filter-icon::before {
   background-color: white;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 5px 15px 0 #dedfea;
+  box-shadow: 0 5px 15px 0 #dadbe5;
+  transition: all 0.1s;
+}
+
+.card:hover {
+  transform: scale(1.06);
 }
 
 #pop .card {
@@ -407,6 +412,7 @@ button:hover .filter-icon::before {
   display: flex;
   flex-flow: row nowrap;
   position: absolute;
+  gap: 1px;
   bottom: 5px;
 }
 
