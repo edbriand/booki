@@ -112,14 +112,14 @@
 
   /* #region Filters */
 
-  .filter-container button {
-    margin: 5px 10px 5px 0;
+  .filter-container a {
+    margin: 7px 20px 7px 0;
     font-size: 16px;
   }
 
   .filter-container h3 {
     flex-basis: 100%;
-    margin: 0 0 10px;
+    margin: 0 0 5px;
   }
 
   /* #endregion */
