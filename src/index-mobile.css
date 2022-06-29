@@ -4,6 +4,22 @@
   --color-background: #f2f2f2;
 }
 
+@media only screen and (max-width: 992px) {
+  main {
+    margin: 0 25px 35px;
+  }
+
+  #pop {
+    min-width: auto;
+    width: 50%;
+  }
+
+  #host {
+    width: 50%;
+    margin-right: 20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   main {
     margin: 0 0 35px;
@@ -109,6 +125,7 @@
     width: auto;
     border-radius: 0;
     padding: 40px 20px;
+    min-width: auto;
   }
 
   #host {
@@ -119,6 +136,10 @@
   .card,
   #pop .card {
     width: 100%;
+  }
+
+  #pop > h2::after {
+    right: 20px;
   }
 
   /* #endregion */
@@ -137,4 +158,15 @@
   }
 
   /* #endregion */
+}
+
+@media only screen and (max-width: 300px) {
+  .searchbar input {
+    width: 130px;
+    padding: 0 0 0 5px;
+  }
+
+  .searchbar input::placeholder {
+    font-size: 0.84em;
+  }
 }
