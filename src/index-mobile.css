@@ -27,12 +27,12 @@
 
   footer {
     flex-direction: column;
-    padding: 50px 25px 0;
+    padding: 30px 25px 15px;
   }
 
   footer ul {
     width: auto;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 
   .title-duo,
@@ -44,6 +44,11 @@
 
   .title-duo:first-child {
     margin-top: 25px;
+  }
+
+  .title-duo p {
+    margin-top: 12px;
+    font-size: 0.97em;
   }
 
   .housing-info {
@@ -124,6 +129,10 @@
 
   /* #endregion */
 
+  .card-container {
+    gap: 10px;
+  }
+
   /* #region Hosts */
 
   .host-block {
@@ -155,6 +164,10 @@
   /* #endregion */
 
   /* #region Activities */
+
+  #activities {
+    margin-bottom: 45px;
+  }
 
   #activities .card-container {
     flex-flow: column nowrap;
