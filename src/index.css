@@ -241,6 +241,7 @@ footer a {
   font-size: 18px;
   font-weight: 700;
   margin: 10px 30px 10px 0;
+  cursor: pointer;
 }
 
 .filter-icon {
