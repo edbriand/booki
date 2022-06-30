@@ -393,6 +393,7 @@ a:hover .filter-icon::before {
   position: relative;
   height: 100%;
   margin-left: 11px;
+  margin-right: 11px;
 }
 
 /* #endregion */
@@ -420,6 +421,7 @@ a:hover .filter-icon::before {
   position: relative;
   width: 30%;
   min-width: 405px;
+  height: 100%;
 }
 
 #host {
