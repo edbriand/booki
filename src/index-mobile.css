@@ -4,6 +4,22 @@
   --color-background: #f2f2f2;
 }
 
+@media only screen and (max-width: 1277px) {
+  #pop .card {
+    height: 160px;
+  }
+
+  #host .card {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  #host .card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   main {
     margin: 0 25px 35px;
@@ -13,19 +29,35 @@
     padding: 30px 25px 35px 30px;
   }
 
+  #pop .card-container {
+    flex-flow: row nowrap;
+  }
+
   #pop {
-    min-width: auto;
-    width: 50%;
+    margin-bottom: 30px;
   }
 
   #host {
-    width: 50%;
-    margin-right: 20px;
+    margin-right: 0;
   }
 
-  .card,
   #pop .card {
-    width: 100%;
+    margin-right: 30px;
+    height: 220px;
+  }
+
+  #pop .card:last-child {
+    margin-right: 0;
+  }
+
+  .host-block {
+    flex-direction: column;
+  }
+
+  #host,
+  #pop {
+    width: auto;
+    padding: 40px 20px;
   }
 }
 
@@ -113,6 +145,10 @@
     margin: 35px 25px;
   }
 
+  .searchbar input {
+    max-width: 210px;
+  }
+
   .searchbar-button {
     display: flex;
     align-items: center;
@@ -144,14 +180,12 @@
   /* #endregion */
 
   .card-container {
-    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
   }
 
   /* #region Hosts */
-
-  .host-block {
-    flex-direction: column;
-  }
 
   #host,
   #pop {
@@ -166,9 +200,17 @@
     background-color: white;
   }
 
+  #pop .card-container {
+    flex-direction: column;
+  }
+
   .card,
+  #host .card,
   #pop .card {
     width: 100%;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 13px;
   }
 
   #pop > h2::after {
@@ -186,12 +228,21 @@
   #activities .card-container {
     flex-flow: column nowrap;
     height: auto;
-    gap: 25px;
   }
 
   #activities .card {
     width: 100%;
     height: 190px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  #activities .card:last-child {
+    margin-bottom: 0;
+  }
+
+  #host .card:last-child {
+    margin-bottom: 30px;
   }
 
   /* #endregion */
