@@ -422,7 +422,7 @@ a:hover .filter-icon::before {
 }
 
 #host {
-  width: 64%;
+  width: 67%;
   margin-right: 40px;
 }
 
@@ -540,7 +540,7 @@ a:hover .filter-icon::before {
 
 /* #endregion */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) {
   #pop .card {
     flex-direction: row;
     height: 144px;
@@ -560,7 +560,7 @@ a:hover .filter-icon::before {
 
   #pop .card > div {
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
