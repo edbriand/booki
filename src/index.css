@@ -431,6 +431,10 @@ a:hover .filter-icon::before {
   margin-bottom: 30px;
 }
 
+#host h3 a:hover {
+  color: var(--color-main);
+}
+
 #pop > h2::after {
   font: var(--fa-font-solid);
   font-weight: 900;
