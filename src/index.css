@@ -231,7 +231,7 @@ footer a {
   margin-right: 40px;
 }
 
-.filter-container a,
+.filter-container .filter-button,
 .filter-icon {
   display: flex;
   align-items: center;
@@ -239,7 +239,7 @@ footer a {
   border-radius: 25px;
 }
 
-.filter-container a {
+.filter-container .filter-button {
   background-color: white;
   border: 2px solid #d9d9d9;
   justify-self: center;
@@ -267,13 +267,13 @@ footer a {
   text-align: center;
 }
 
-.filter-container a:hover {
+.filter-container .filter-button:hover {
   border: 2px solid var(--color-main-light);
   position: relative;
   top: +2px;
 }
 
-.filter-container a:hover,
+.filter-container .filter-button:hover,
 .navbar li:hover a {
   color: var(--color-main);
 }
@@ -285,7 +285,7 @@ footer a {
   font-size: 20px;
 }
 
-a:hover .filter-icon::before {
+.filter-button:hover .filter-icon::before {
   font-size: 24px;
 }
 
@@ -457,7 +457,7 @@ a:hover .filter-icon::before {
   bottom: 5px;
 }
 
-.stars div::before {
+.star::before {
   font: var(--fa-font-solid);
   font-weight: 900;
   content: '\f005';
@@ -465,7 +465,7 @@ a:hover .filter-icon::before {
   font-size: 12px;
 }
 
-.stars div.star-on::before {
+.star.on::before {
   color: var(--color-main);
 }
 

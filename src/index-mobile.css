@@ -248,7 +248,7 @@
   /* #endregion */
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
   .searchbar input {
     width: 130px;
     padding: 0 0 0 5px;
