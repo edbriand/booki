@@ -416,13 +416,13 @@ footer a {
 
 #pop {
   position: relative;
-  width: 33%;
+  width: 32%;
   min-width: 330px;
   height: 100%;
 }
 
 #host {
-  width: 67%;
+  width: 68%;
   margin-right: 40px;
 }
 
